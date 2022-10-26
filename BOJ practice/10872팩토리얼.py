@@ -12,7 +12,7 @@ input = sys.stdin.readline
 n=int(input())
 
 def fac(N):
-    if N==0:
+    if N==0: #종료조건
         return 1
     else:
         return N*fac(N-1)

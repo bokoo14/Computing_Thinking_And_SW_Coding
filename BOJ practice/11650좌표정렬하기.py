@@ -4,11 +4,13 @@ input = sys.stdin.readline
 N =int(input())
 
 array = [tuple(map(int, input().split())) for _ in range(N)]
+# x좌표가 증가하는 순, y좌표가 증가하는 순서로 정렬
 array.sort(key=lambda x: (x[0], x[1]))
 
-array = list(array)
+# array = list(array)
 for i in range(N):
     print(*array[i])
+
 '''
 import sys
 

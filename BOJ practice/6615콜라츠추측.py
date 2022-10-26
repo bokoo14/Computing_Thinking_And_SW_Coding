@@ -1,13 +1,15 @@
 import sys
 input=sys.stdin.readline
+# 콜라츠 추측
 def collatz(n):
     if n == 1:
         return [1]
-    elif n % 2 == 0:
+    elif n % 2 == 0: # 짝수이면 x(i+1)=x(i)/2
         return [n] + collatz(n // 2)
-    else:
+    else: # 홀수이면 x(i+1)=3*x(i)+1
         return [n] + collatz(3*n + 1)
 
+# 처음으로 같은 숫자가 나왔을때, 각각 몇번째 수열에서 만나는지 구해줌
 def solve(A, B):
     a = collatz(A)[::-1]
     b = collatz(B)[::-1]

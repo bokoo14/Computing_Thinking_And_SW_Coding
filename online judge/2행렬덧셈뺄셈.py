@@ -7,6 +7,7 @@ A=[list(map(int, input().split())) for _ in range(N)]
 B=[list(map(int, input().split())) for _ in range(N)]
 C=[list(map(int, input().split())) for _ in range(N)]
 
+# 행렬의 덧셈과 뺼셈
 D=[[0]*M for _ in range(N)]
 for i in range(N):
     for j in range(M):

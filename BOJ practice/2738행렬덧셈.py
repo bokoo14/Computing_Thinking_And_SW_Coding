@@ -1,3 +1,4 @@
+# 두 행렬을 더하는 프로그램
 import sys
 input=sys.stdin.readline
 
@@ -13,5 +14,4 @@ for i in range(N):
 
 for i in range(N):
     print(*C[i])
-
-
+    
