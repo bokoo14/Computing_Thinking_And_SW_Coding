@@ -13,7 +13,7 @@ while 1:
 # 펠린드롬수인지 판별
 def is_palindrome(n):
     s = str(n)
-    return s == s[::-1]
+    return s == s[::-1] # 팰린드롬수이면 return 1
 
 while True:
     n = int(input())

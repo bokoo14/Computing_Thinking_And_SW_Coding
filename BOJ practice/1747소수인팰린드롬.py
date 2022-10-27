@@ -1,6 +1,7 @@
 import sys
 input = sys.stdin.readline
 
+# 소수인지 판별
 def is_prime(k):
     if k<2:
         return False
@@ -10,6 +11,7 @@ def is_prime(k):
                 return False
     return True
 
+# 팰린드롬수인지 판별
 def is_palindrome(n):
     s = str(n)
     return s == s[::-1]

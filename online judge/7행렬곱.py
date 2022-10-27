@@ -14,3 +14,5 @@ for i in range(l):
 
 for i in range(l):
     print(*C[i])
+
+
