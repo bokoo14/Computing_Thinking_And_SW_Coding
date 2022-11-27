@@ -2,6 +2,18 @@ import sys
 input = sys.stdin.readline
 import math
 # N보다 작거나 같은 모든 소수를 효율적으로 찾는 알고리즘
+
+def find_primes(n):
+    sieve = [0] * (n + 1)
+    for i in range(2, int(n ** 0.5) + 1):
+        if sieve[i] == 0:
+            for j in range(i * i, n + 1, i):
+                sieve[j] = 1
+    return [i for i in range(2, n + 1) if sieve[i] == 0]
+
+print(find_primes(10))
+print(find_primes(100))
+
 '''
 def solve(M, N):
     sieve = [1]*(N+1) #리스트에 값을 저장
@@ -16,15 +28,4 @@ def solve(M, N):
     print(sum(sieve))
 
 solve(1, 10)
-
 '''
-def find_primes(n):
-    sieve = [0] * (n + 1)
-    for i in range(2, int(n ** 0.5) + 1):
-        if sieve[i] == 0:
-            for j in range(i * i, n + 1, i):
-                sieve[j] = 1
-    return [i for i in range(2, n + 1) if sieve[i] == 0]
-
-print(find_primes(10))
-print(find_primes(100))

@@ -6,16 +6,22 @@
 '''
 
 import sys
-sys.setrecursionlimit(15000) #재귀 제한 풀기
+sys.setrecursionlimit(10**8) #재귀 제한 풀기
 input = sys.stdin.readline
 
-n=int(input())
+answer =1
+for i in range(1, 1234567):
+    answer *= i
+    
 
-def fac(N):
-    if N==0: #종료조건
-        return 1
-    else:
-        return N*fac(N-1)
 
-answer = fac(n)
-print(answer)
+answer2 =1
+for i in range(1, 1233677):
+    answer2 = answer2*i
+
+answer= list(answer)
+answer2= list(answer2)
+print(answer[0:4])
+print(answer2[0:4])
+# print(int(answer//answer2))
+

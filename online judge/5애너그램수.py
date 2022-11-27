@@ -8,7 +8,7 @@ array = list(map(int,input().split()))
 answer=0
 for i in range(0, len(array)):
     array[i]=list(str(array[i]))
-    array[i].sort(key= lambda x: int(x))
+    array[i].sort(key= lambda x: int(x)) # 각각을 정렬
     #print(array[i])
     if list(str(n))==array[i]:
         answer+=1

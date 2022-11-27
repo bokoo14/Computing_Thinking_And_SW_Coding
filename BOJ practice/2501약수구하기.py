@@ -27,3 +27,4 @@ def divisor(n):
 N, K = map(int, input().split())
 D = divisor(N)
 print(D[K - 1] if K <= len(D) else 0)
+# 만일 N의 약수의 개수가 K개보다 적어서 K번째 약수가 존재하지 않을 경우에는 0을출력

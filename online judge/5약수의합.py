@@ -12,6 +12,7 @@ def divcnt(n):
         if n%i==0: # 나누어지면 약수이다
             answer+=i # 약수를 더해줌
             answer+=n//i #또 다른 약수도 더해줌(몫)
+            
     if int(math.sqrt(n))**2 ==n: #값이 제곱수이면
         answer-=int(math.sqrt(n)) # 두번 더해졌으니까 한번 뺴줌
     return answer

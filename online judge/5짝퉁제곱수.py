@@ -10,7 +10,7 @@ def plus(n):
 # 각 자리수의 합이 제곱수인지 판별
 def mul(k):
     N = plus(k) # 각 자리수의 합
-    if int(math.sqrt(N))**2 == N:
+    if int(math.sqrt(N))**2 == N: # 제곱수인지 판별
         return 1
 
     return 0

@@ -12,8 +12,8 @@ def is_prime(k):
     return True
 
 n = int(input()) 
-answer=0
-cnt=0
+answer=0 # 몇번째 소수인지 
+cnt=0 # 숫자 올려주기
 while 1:
     if answer==n: #n번째 소수라면
         print(cnt)
